@@ -1,0 +1,34 @@
+Algoritmo areadelcirculo
+		escribir "escribir el radio del circulo: ";
+		leer R;
+		area<- 3.1416*r*r;
+		escribir "el area del circulo es: ";
+		escribir area;
+	
+
+		
+	FinAlgoritmo
+	
+
+	// area del circulo.cpp : Defines the entry point for the console application.
+	//
+	
+
+	#include "stdafx.h"
+	#include <iostream>
+	#include "conio.h"
+	using namespace std;
+	
+
+	void main()
+	{
+		float R,area;
+		cout<< "escribir el radio del circulo: ";
+		cin>> R;
+		area= 3.1416*R*R;
+		cout<< "el area del circulo es: ";
+		cout<< area;
+	
+
+		getch() ;
+	}
