@@ -1,0 +1,40 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main()
+{
+	float a,b,c,raiz,resultado1,resultado2,resultadoreal;
+ 
+    cout << "FORMA GENERAL DE LA ECUACION CUADRATICA : ax^2+-bx+-c = 0" <<endl;
+    cout << "Introduzca la variable a: " << endl;
+    cin  >> a;
+    cout << "Introduzca la variable b:" << endl;
+    cin  >> b;
+    cout << "Introduzca la variable c:" << endl;
+    cin  >> c;
+	raiz= pow(b,2)-4*a*c;
+	if (raiz>0)
+	{
+	resultado1=((-b+raiz)/2*a);
+	resultado2=((-b-raiz)/2*a);
+	cout<< "el 1er resultado es: "<<resultado1<<endl;
+	cout<< "el 2do resultado es: "<<resultado2<<endl;
+	} 
+	else
+	if (raiz==0)
+	{resultado1=-b/(2*a);
+	cout<< "el resultado es: "<<resultado1;
+	}
+	else 
+	{
+		resultadoreal=-b/(2*a);
+		resultado2=sqrt(-raiz)/(2*a);
+	cout<< "el resultado es:"<<resultadoreal<<"+"<<resultado2<<"i"<<endl;
+	cout<< "el resultado es:"<<resultadoreal<<"-"<<resultado2<<"i"<<endl;
+	}
+	getch ();
+}
