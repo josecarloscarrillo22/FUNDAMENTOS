@@ -1,0 +1,41 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+void main()
+{
+float A,prom=0;
+cout<<"determinaremos el promedio de cinco numeros que sean introducidos"<<endl;
+cin>>A;
+prom=prom+A;
+cin>>A;
+prom=prom+A;
+cin>>A;
+prom=prom+A;
+cin>>A;
+prom=prom+A;
+cin>>A;
+prom=prom+A;
+cout<<"el promedio es:";
+cout<<prom/5;
+getch();
+}
+PSEINT
+Proceso promedio
+Escribir 'sacaremos el promedio de 5 numeros dados por usted'
+Leer a
+prom<-prom+a
+Leer a
+prom<-prom+a
+Leer a
+prom<-prom+a
+Leer a
+prom<-prom+a
+Leer a
+prom<-prom+a
+prom<-prom/5
+Escribir "el promedio es:"
+Escribir prom
+FinProceso
+	
