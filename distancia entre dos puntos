@@ -1,0 +1,32 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+void main()
+{
+float x1,y1,x2,y2,d;
+cout<<"determinaremos la distancia entre dos puntos otorgados por usted"<<endl;
+cout<<"indicar coordenadas del primer punto"<<endl;
+cin>>x1>>y1;
+cout<<"indicar coordenadas del segundo punto:"<<endl;
+cin>>x2>>y2;
+d=sqrt((x1-y1)*(x1-y1)+(x2-y2)*(x2-y2));
+cout<<"la distancia es:"<<endl;
+cout<<d;
+getch();
+}
+PSEINT
+Proceso distanciaentredospuntos
+Escribir "este programa calcula la distancia entre dos puntos"
+Escribir "indicar coordenadas del primer punto"
+Leer x1
+Leer y1
+Escribir "indicar coordenadas del segundo punto"
+Leer x2
+Leer y2
+d<-raiz((x1-y1)*(x1-y1)+(x2-y2)*(x2-y2))
+escribir "la distancia es:"
+escribir d
+
+FinProceso 
