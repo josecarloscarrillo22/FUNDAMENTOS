@@ -1,0 +1,50 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+void verificacion (float x1, float x2, float x3, float y1,float  y2, float y3, float &a, float &b, float &c, float &r);
+void main () {
+float x1, x2, x3, y1, y2, y3, a, b, c, r;
+cout<<"Ingrese los primeros puntos: ";
+cin>>x1>>y1;
+cout<<"Ingrese los segundos puntos: ";
+cin>>x2>>y2;
+cout<<"Ingrese los terceros puntos: ";
+cin>>x3>>y3;
+verificacion (x1,x2,x3,y1, y2,y3, a,  b, c, r);
+if (r == c) {
+cout<<"Es un triangulo rectangulo!";
+} else {
+cout<<"No es un triangulo rectangulo.";
+}
+getch();
+}
+
+void verificacion (float x1, float x2, float x3, float y1,float  y2, float y3, float &a, float &b, float &c, float &r) {
+float dist1, dist2, dist3;
+// distancia a - b
+	dist1 = pow(sqrt(pow((x2 - x1),2)+pow((y2-y1),2)),2);
+// distancia b - c
+	dist2 = pow(sqrt(pow((x2 - x3),2)+pow((y2-y3),2)),2);
+// distancia a  - c
+	dist3 =  pow(sqrt(pow((x3 - x1),2)+pow((y3-y1),2)),2);
+	if (dist1 > dist2 && dist1 > dist3) {
+	c = dist1;
+	a = dist2;
+	b = dist3;
+	r = a+b;
+	} else {
+		if(dist2 > dist1 && dist2 > dist3) {
+			c = dist2;
+			a = dist1;
+			b = dist3;
+			r = a+b;
+		} else {
+			c = dist3;
+			a = dist1;
+			b = dist2;
+			r = a+b;
+		}
+	}
+}
