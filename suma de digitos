@@ -1,0 +1,23 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+int sumadigito (int n);
+void main () {
+int n;
+cout<<"Por favor digite el numero: ";
+cin>>n;
+cout<<"El resultado es: "<<sumadigito(n);
+getch();
+}
+
+int sumadigito (int n) {
+	int digito, sum=0;
+	while (n > 0) {
+	digito = n%10;
+	sum = sum + digito;
+	n = n/10;
+	}
+return sum;
+}
