@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+float factorial (float a);
+
+void main() {
+	int n, sum;
+	cout<<"ingresar la cantidad N: ";
+	cin>>n;
+	sum = factorial(n);
+	cout<<"el resultado es: "<<sum<<endl;
+getch();
+}
+
+float factorial (float a) {
+	int i = 1, sum = 1;
+	while (i <= a) {
+		if((a == 0) || (a == 1)){
+			sum = 1;
+		} else {
+			sum = sum*i;
+		} 
+		i ++;
+	}
+	return sum;
+}
