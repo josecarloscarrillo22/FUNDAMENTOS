@@ -1,0 +1,45 @@
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+
+using namespace std;
+ bool partidario(int arreglo[],int tam);
+ void leer (int arreglo[],int tam);
+ void main ()
+ {
+     bool s;
+	 int tam,arreglo[100];
+	 cout<<"ingrese el tamaño"<<endl;
+	 cin>>tam;
+	 cout<<"ingrese el vector"<<endl;
+	 leer (arreglo,tam);
+	 s=partidario(arreglo,tam);
+	 if(s==true)
+	 {
+		 cout<<"el arreglo es partidario";
+	 }else {
+		 cout<<"el arreglo no es partidario";
+	 }
+	 getch();
+
+  }
+ void leer (int arreglo [],int tam)
+ {
+	 for(int i=0;i<tam;i++)
+	 { 
+		 cin>>arreglo[i];
+	 }
+
+ }
+ bool partidario(int arreglo[],int tam)
+ {
+ bool s=false;
+ for (int i=0;i<tam-1;i=+2)
+	 for(int k=1;k<tam;k=+2)
+	 {if (arreglo[i]>arreglo[k]) 
+	 return true;
+	 else
+		 return s;}
+ }
